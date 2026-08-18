@@ -73,3 +73,20 @@ const chakeEiligibility =(studentScore, studentAttendance) => {
 const eligabil = chakeEiligibility(score, attendance);
 console.log("Exam Eligibility:", eligabil);
 document.getElementById("eligibility").textContent = eligabil;
+
+//===========================================================================
+
+// remove extra spaces
+const Name = name.trim();
+// change state in to upper case
+const clearName = Name.toUpperCase();
+//chake if it include on upper case
+const isJavascriptStudent =course.toUpperCase().includes("JAVASCRIPT");
+// use ternary operator to know result
+const result = score >= 60 ? "PASS" : "FAIL";
+
+
+console.log("Cleaned Name:", clearName);
+console.log("JavaScript Student:", isJavascriptStudent);
+console.log("Student Result:", result);
+document.getElementById("result").textContent = result;
