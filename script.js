@@ -90,3 +90,33 @@ console.log("Cleaned Name:", clearName);
 console.log("JavaScript Student:", isJavascriptStudent);
 console.log("Student Result:", result);
 document.getElementById("result").textContent = result;
+
+//================================================================
+
+
+// Global Scope
+const academyName = "Nexus Academy";
+
+function demonstrateScope() {
+
+    // Function Scope
+    const studentMessage = "Student evaluation is in progress.";
+
+    console.log(`${academyName}: ${studentMessage}`);
+
+    // Loop creates Block Scope
+    for (let i = 1; i <= 3; i++) {
+
+        // Block Scope
+        const stepMessage = `Processing evaluation step ${i}...`;
+
+        console.log(stepMessage);
+        const step = document.createElement("p");
+        step.textContent = stepMessage;
+        evaluationSteps.appendChild(step);
+    }
+}
+
+demonstrateScope();
+
+//===========================================================
