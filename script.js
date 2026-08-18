@@ -120,3 +120,24 @@ function demonstrateScope() {
 demonstrateScope();
 
 //===========================================================
+
+
+const finalReport = `
+===== Student Performance Report =====
+
+Name: ${clearName}
+Age: ${age}
+Course: ${course}
+Score: ${score}
+Attendance: ${attendance}%
+
+Grade: ${grade}
+Performance Status: ${status}
+Exam Eligibility: ${eligabil}
+Result: ${result}
+
+======================================
+`;
+
+console.log(finalReport);
+document.getElementById("finalReport").textContent = finalReport;
