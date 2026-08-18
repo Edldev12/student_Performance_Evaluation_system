@@ -64,3 +64,12 @@ const status = getStudentStatus(score);
 console.log("Performance Status:", status);
 
 document.getElementById("status").textContent = status;
+
+//===============================
+const chakeEiligibility =(studentScore, studentAttendance) => {
+  return studentScore >= 50 && studentAttendance >= 75 ? "Eligible" : "Not Eligable";
+};
+
+const eligabil = chakeEiligibility(score, attendance);
+console.log("Exam Eligibility:", eligabil);
+document.getElementById("eligibility").textContent = eligabil;
