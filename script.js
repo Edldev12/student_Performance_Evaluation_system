@@ -22,7 +22,7 @@ document.getElementById("studentName").textContent = name;
 document.getElementById("studentAge").textContent = age;
 document.getElementById("studentCourse").textContent = course;
 document.getElementById("studentScore").textContent = score;
-document.getElementById("studentAttendance").textContent = attendance;
+document.getElementById("studentAttendance").textContent = attendance + "%";
 
 //====================================================
 const calculateGrade =(score) => {
