@@ -1,5 +1,10 @@
 const name = "Edlawit Tsegaye";
-const age = 20;function displayStudentInfo (name, age, course, score, attendance){
+const age = 20;
+const course = "java script";
+const score = 98;
+const attendance = 90;
+
+function displayStudentInfo (name, age, course, score, attendance){
   return `
   student Information
   -------------------
@@ -18,9 +23,6 @@ document.getElementById("studentAge").textContent = age;
 document.getElementById("studentCourse").textContent = course;
 document.getElementById("studentScore").textContent = score;
 document.getElementById("studentAttendance").textContent = attendance;
-const course = "javascript";
-const score = 98;
-const attendance = 90;
 
 //====================================================
 const calculateGrade =(score) => {
@@ -44,3 +46,21 @@ const grade = calculateGrade(score);
 console.log("Grade:", grade);
 document.getElementById("grade").textContent = grade;
 
+//===========================================================
+const getStudentStatus = (studentScore) => {
+  if (studentScore >= 90){
+    return "Excellent Performance";
+  }
+  else if (studentscore >= 60){
+    return "Passed";
+  }
+  else{
+    return "Failed";
+  }
+};
+
+const status = getStudentStatus(score);
+
+console.log("Performance Status:", status);
+
+document.getElementById("status").textContent = status;
